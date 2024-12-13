@@ -20,7 +20,7 @@ const Home = () => {
             User Management Application
           </h1>
           <p className="text-xl text-gray-600">
-            By EmployWise integrated with the Reqres API for user management.
+            By <span className='bg-gradient-to-br from-blue-600 to-amber-400 bg-clip-text text-transparent font-bold'>EmployWise</span> integrated with the Reqres API for user management.
           </p>
         </motion.header>
 
