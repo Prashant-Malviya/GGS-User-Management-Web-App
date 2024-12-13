@@ -1,6 +1,6 @@
 # User Management Application with React, Redux, and Reqres API
 
-Deployed Link: -
+Deployed Link: - https://user-managment-app-prashant-malviya.netlify.app/
 
 ## Overview
 
