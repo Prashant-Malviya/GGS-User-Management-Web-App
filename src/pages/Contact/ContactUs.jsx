@@ -27,7 +27,7 @@ const ContactUs = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <li className="mb-2">
-          <strong>Email:</strong> <a href="mailto:prashantmalviya272002@gmail.com" className="text-blue-400 hover:underline">prashantmalviyaofficial@gmail.com</a>
+          <strong>Email:</strong> <a href="mailto:prashantmalviya272002@gmail.com" className="text-blue-400 hover:underline">prashantmalviya272002@gmail.com</a>
         </li>
         <li className="mb-2">
           <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prashant-malviya-57270b1b6/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">linkedin.com/in/prashant-malviya-57270b1b6</a>

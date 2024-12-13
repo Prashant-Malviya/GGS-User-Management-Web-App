@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser, setUser } from '../../store/slice/authSlice';
 import { useNavigate } from 'react-router-dom';
-import { toast, Toaster } from 'react-hot-toast'; // Import toast
+import { toast, Toaster } from 'react-hot-toast'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');

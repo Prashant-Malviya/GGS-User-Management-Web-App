@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { setSearchQuery } from '../../store/slice/searchSlice';
-import { logout } from '../../store/slice/authSlice';
-import { Link, useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { FaUserCircle } from 'react-icons/fa';
-import logo from '../../images/Logo.svg';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setSearchQuery } from "../../store/slice/searchSlice";
+import { logout } from "../../store/slice/authSlice";
+import { Link, useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { FaUserCircle } from "react-icons/fa";
+import logo from "../../images/Logo.svg";
 
 function NavbarMenu() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [showLogout, setShowLogout] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ function NavbarMenu() {
   // Logout
   const handleSignOut = () => {
     dispatch(logout());
-    navigate('/');
+    navigate("/");
   };
 
   // Handle Link Click
@@ -44,7 +44,7 @@ function NavbarMenu() {
     >
       <Container fluid>
         {/* Logo */}
-        <Link to={'/home'} className="no-underline">
+        <Link to={"/home"} className="no-underline">
           <Navbar.Brand className="flex items-center space-x-2">
             <img src={logo} alt="logo" className="w-28 h-10" />
           </Navbar.Brand>
@@ -103,7 +103,11 @@ function NavbarMenu() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <Button variant="outline-success" type="submit" className="w-full lg:w-auto">
+            <Button
+              variant="outline-success"
+              type="submit"
+              className="w-full lg:w-auto"
+            >
               Search
             </Button>
           </Form>
